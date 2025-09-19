@@ -57,6 +57,6 @@ To get a local copy up and running, follow these simple steps.
 ## 👥 Development Team
 This project was brought to life by the following team:
 
-* [cite_start]**Eliam Bahena Diaz** - Lead Programmer [cite: 103]
-* [cite_start]**Alexssandro Rosendo Galindo Castro** - Project Manager & UI/UX Designer [cite: 104]
-* [cite_start]**Enrique Copado Vargas** - Game Designer [cite: 105]
+* **Eliam Bahena Diaz** - Lead Programmer
+* **Alexssandro Rosendo Galindo Castro** - Project Manager & UI/UX Designer
+* **Enrique Copado Vargas** - Game Designer
