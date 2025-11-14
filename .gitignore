@@ -1,0 +1,18 @@
+# Carpetas generadas por Unity (¡IMPORTANTE!)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Archivos de IDE y sistema
+.vs/
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.suo
+*.user
+*.userprefs
