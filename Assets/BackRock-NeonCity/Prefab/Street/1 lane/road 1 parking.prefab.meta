@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 18dc0cd2c080841dea60987a38ce93fa
+guid: 293128706575d2649a7fa299ba5906e3
+timeCreated: 1519662450
+licenseType: Store
 NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 298393
   packageName: 3D Neon Capital City - Low Poly Urban Environment for Unity
   packageVersion: 1.0
-  assetPath: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+  assetPath: Assets/BackRock-NeonCity/Prefab/Street/1 lane/road 1 parking.prefab
   uploadId: 811766

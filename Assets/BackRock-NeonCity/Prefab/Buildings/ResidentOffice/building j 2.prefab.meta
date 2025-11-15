@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 18dc0cd2c080841dea60987a38ce93fa
+guid: 0effe1eec4e901d40a59b360efb5b15e
+timeCreated: 1517166189
+licenseType: Store
 NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +11,6 @@ AssetOrigin:
   productId: 298393
   packageName: 3D Neon Capital City - Low Poly Urban Environment for Unity
   packageVersion: 1.0
-  assetPath: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+  assetPath: Assets/BackRock-NeonCity/Prefab/Buildings/ResidentOffice/building j
+    2.prefab
   uploadId: 811766
