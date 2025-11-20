@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 18dc0cd2c080841dea60987a38ce93fa
+guid: f944f4aad2bd7f8478a5aab168f6f33a
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
+  mainObjectFileID: 4890085278179872738
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 298393
   packageName: 3D Neon Capital City - Low Poly Urban Environment for Unity
   packageVersion: 1.0
-  assetPath: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+  assetPath: Assets/BackRock-NeonCity/NeonCity-Settings/New Lighting Settings.lighting
   uploadId: 811766

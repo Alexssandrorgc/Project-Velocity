@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 18dc0cd2c080841dea60987a38ce93fa
-NativeFormatImporter:
+guid: 47a55ff4b4b269e4dabddb8c84f2bf79
+PrefabImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 298393
   packageName: 3D Neon Capital City - Low Poly Urban Environment for Unity
   packageVersion: 1.0
-  assetPath: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
+  assetPath: Assets/BackRock-NeonCity/Prefab/Particles/SmokeUp.prefab
   uploadId: 811766
