@@ -4,6 +4,9 @@ public class TileManager : MonoBehaviour
 {
     public static TileManager Instance;
     public Transform[] tiles;
+    
+    [Header("Sistema de Obstáculos")]
+    public ObstacleSpawner obstacleSpawner; // Referencia al spawner
 
     private void Awake()
     {
@@ -11,6 +14,18 @@ public class TileManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        // Spawner obstáculos iniciales en todos los tiles al inicio
+        if (obstacleSpawner != null)
+        {
+            foreach (Transform tile in tiles)
+            {
+                obstacleSpawner.SpawnObstaclesOnTile(tile);
+            }
+        }
     }
 
     public void MoveTile(Transform tileToMove)
@@ -59,6 +74,12 @@ public class TileManager : MonoBehaviour
         }
 
         Debug.Log($"Pista {tileToMove.name} movida a Z: {newPos.z}");
+
+        // SPAWNER NUEVOS OBSTÁCULOS en el tile movido
+        if (obstacleSpawner != null)
+        {
+            obstacleSpawner.SpawnObstaclesOnTile(tileToMove);
+        }
 
         ReorderTiles(tileToMove);
     }

@@ -9,7 +9,16 @@ public class EndTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log($"Player cruzó el EndTrigger de {parentTile.name}");
-            TileManager.Instance.MoveTile(parentTile);
+            
+            // Validación adicional (opcional)
+            if (TileManager.Instance != null && parentTile != null)
+            {
+                TileManager.Instance.MoveTile(parentTile);
+            }
+            else
+            {
+                Debug.LogError("TileManager.Instance o parentTile es null!");
+            }
         }
     }
 
