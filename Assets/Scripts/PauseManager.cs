@@ -39,7 +39,7 @@ public class PauseManager : MonoBehaviour
     if (currentScoreText != null && ScoreManager.Instance != null)
     {
         int score = ScoreManager.Instance.GetScore();
-        currentScoreText.text = $"Tu Puntuación Actual: {score}";
+        currentScoreText.text = $"Tu Puntuacion Actual: {score}";
     }
     // FIN NUEVA LÓGICA DE PUNTUACIÓN --->
 
