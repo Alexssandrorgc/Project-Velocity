@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/BackRock-NeonCity/Scenes/MainMenu.unity
+    guid: 880331c0f75b0a64a9f50a13cb802dc6
+  - enabled: 1
+    path: Assets/BackRock-NeonCity/Scenes/Ciudades.unity
+    guid: b4f1449dfdf661b47b6a95f02a0b4f34
+  - enabled: 1
+    path: Assets/BackRock-NeonCity/Scenes/Credits.unity
+    guid: 8f0b8c8992ff64d4b9b5bfe778753d2b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
