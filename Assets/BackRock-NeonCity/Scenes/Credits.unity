@@ -415,234 +415,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PROYECTO VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    - Alex
-
-    -
-    Eliam
-
-
-
-    Agradecimientos especiales:
-
-    - Unity
-
-    - ChatGPT
-
-
-    PROYECTO
-    VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos
-    especiales:
-
-    - Unity
-
-    - ChatGPT
-
-
-    PROYECTO VELOCITY
-
-    Desarrollado
-    por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    -
-    Unity
-
-    - ChatGPT
-
-    PROYECTO VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    -
-    Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    - Unity
-
-    - ChatGPT
-
-    PROYECTO
-    VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos
-    especiales:
-
-    - Unity
-
-    - ChatGPT
-
-    PROYECTO VELOCITY
-
-    Desarrollado
-    por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    -
-    Unity
-
-    - ChatGPT
-
-    PROYECTO VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    -
-    Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    - Unity
-
-    - ChatGPT
-
-    PROYECTO
-    VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos
-    especiales:
-
-    - Unity
-
-    - ChatGPT
-
-    PROYECTO VELOCITY
-
-    Desarrollado
-    por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    -
-    Unity
-
-    - ChatGPT
-
-    PROYECTO VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    -
-    Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    - Unity
-
-    - ChatGPT
-
-    PROYECTO
-    VELOCITY
-
-    Desarrollado por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos
-    especiales:
-
-    - Unity
-
-    - ChatGPT
-
-    PROYECTO VELOCITY
-
-    Desarrollado
-    por:
-
-    - Enrique
-
-    - Alex
-
-    - Eliam
-
-
-    Agradecimientos especiales:
-
-    -
-    Unity
-
-    - ChatGPT
-
-'
+  m_text: "Cr\xE9ditos del Proyecto Velocity\r\n\r\nProductor Ejecutivo:\r\nAlexssandro
+    Rosendo Galindo Castro\r\n(Tambi\xE9n conocido como \u201CEl que s\xED guarda
+    los cambios en Git\u2026 a veces y a veces no\u201D)\r\n\r\nArquitecto del Multiverso
+    Digital:\r\nEnrique Copado Vargas\r\n(Si algo funciona, seguramente \xE9l lo
+    toc\xF3\u2026 o mas probablemente no)\r\n\r\nIngeniero en Velocidad Prohibida:\r\nEliam
+    Bahena D\xEDaz\r\n(Responsable del 80% del rendimiento\u2026 y del 120% de los
+    bugs)\r\n\r\nDirecci\xF3n Art\xEDstica:\r\nEl Equipo de los mas chambeadores\r\n(Ese
+    grupo misterioso que aparece en todos los cr\xE9ditos y algunas clases)\r\n\r\nProgramaci\xF3n
+    Hardcore y Caf\xE9 No Dormido:\r\nTodos los anteriores\r\n(El sue\xF1o es para
+    los d\xE9biles)\r\n\r\nCinem\xE1ticas y Efectos \xC9picos:\r\nUn video que casi
+    destruye el repositorio\r\n(Ahora convertido en LFS gracias a la ciencia)\r\n\r\nTesting
+    Profesional:\r\nEl teclado de cada uno\r\n(Porque se golpe\xF3 MUCHAS veces)\r\n\r\nAgradecimientos
+    Especiales:\r\nUnity\r\n(Por crashear en los momentos m\xE1s emocionantes)\r\nGit\r\n(Por
+    darnos mini ataques al coraz\xF3n y jugar con nuestros sentimientos)\r\nY t\xFA,
+    jugador\r\n(Por no preguntar por qu\xE9 un carro va a 500 km/h)\r\n\r\nagradecimientos
+    especiales:\r\nChatGPT\r\nGemini\r\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n..\n.\n.\n.\n.\n.\n.\n.\n.\n.\n
+    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -756,7 +545,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 5}
-  m_SizeDelta: {x: 750, y: 350}
+  m_SizeDelta: {x: 900, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517368353
 MonoBehaviour:
@@ -845,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -949,7 +738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 59, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &612071404
@@ -996,7 +785,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 658646152}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3107752
+  m_Size: 0.48591542
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
