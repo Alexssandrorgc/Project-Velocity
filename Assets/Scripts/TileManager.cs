@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class TileManager : MonoBehaviour
 {
@@ -6,7 +7,14 @@ public class TileManager : MonoBehaviour
     public Transform[] tiles;
     
     [Header("Sistema de Obstáculos")]
-    public ObstacleSpawner obstacleSpawner; // Referencia al spawner
+    public ObstacleSpawner obstacleSpawner;
+    
+    [Header("Configuración de Teletransporte")]
+    [SerializeField] private float minDistanceFromCamera = 100f; // Distancia mínima de la cámara para mover
+    [SerializeField] private float checkInterval = 0.1f; // Cada cuánto verificar la distancia
+    
+    private Camera mainCamera;
+    private bool isMovingTile = false;
 
     private void Awake()
     {
@@ -14,11 +22,12 @@ public class TileManager : MonoBehaviour
             Instance = this;
         else
             Destroy(gameObject);
+            
+        mainCamera = Camera.main;
     }
 
     private void Start()
     {
-        // Spawner obstáculos iniciales en todos los tiles al inicio
         if (obstacleSpawner != null)
         {
             foreach (Transform tile in tiles)
@@ -30,10 +39,39 @@ public class TileManager : MonoBehaviour
 
     public void MoveTile(Transform tileToMove)
     {
-        // Última pista actual
+        if (isMovingTile) return;
+        
+        // Esperar hasta que el chunk esté fuera de vista
+        StartCoroutine(MoveTileWhenOutOfSight(tileToMove));
+    }
+    
+    private IEnumerator MoveTileWhenOutOfSight(Transform tileToMove)
+    {
+        isMovingTile = true;
+        
+        // Esperar hasta que el chunk esté lo suficientemente lejos de la cámara
+        while (true)
+        {
+            float distance = Mathf.Abs(tileToMove.position.z - mainCamera.transform.position.z);
+            
+            if (distance > minDistanceFromCamera)
+            {
+                Debug.Log($"Chunk {tileToMove.name} está a {distance} unidades, procediendo a mover");
+                break;
+            }
+            
+            yield return new WaitForSeconds(checkInterval);
+        }
+        
+        // Ahora mover el chunk
+        PerformTileMove(tileToMove);
+        
+        isMovingTile = false;
+    }
+    
+    private void PerformTileMove(Transform tileToMove)
+    {
         Transform lastTile = tiles[tiles.Length - 1];
-
-        // Obtener EndTrigger de la última pista y StartPoint de la pista a mover
         Transform lastEnd = lastTile.Find("EndTrigger");
         Transform moveStart = tileToMove.Find("StartPoint");
 
@@ -49,17 +87,7 @@ public class TileManager : MonoBehaviour
             return;
         }
 
-        // DESACTIVAR la pista visualmente antes de moverla
-        MeshRenderer[] renderers = tileToMove.GetComponentsInChildren<MeshRenderer>();
-        foreach(var renderer in renderers)
-        {
-            renderer.enabled = false;
-        }
-
-        // Calcular SOLO el offset en Z
         float offsetZ = tileToMove.position.z - moveStart.position.z;
-
-        // Nueva posición
         Vector3 newPos = tileToMove.position;
         newPos.z = lastEnd.position.z + offsetZ;
         newPos.x = tileToMove.position.x;
@@ -67,15 +95,8 @@ public class TileManager : MonoBehaviour
         
         tileToMove.position = newPos;
 
-        // REACTIVAR la pista en su nueva posición
-        foreach(var renderer in renderers)
-        {
-            renderer.enabled = true;
-        }
-
         Debug.Log($"Pista {tileToMove.name} movida a Z: {newPos.z}");
 
-        // SPAWNER NUEVOS OBSTÁCULOS en el tile movido
         if (obstacleSpawner != null)
         {
             obstacleSpawner.SpawnObstaclesOnTile(tileToMove);

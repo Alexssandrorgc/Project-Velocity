@@ -82,6 +82,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b70457a836ab74486a0f5c824f1e2d2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 156412363878045782}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b70457a836ab74486a0f5c824f1e2d2e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4374341233132009481}
   m_SourcePrefab: {fileID: 100100000, guid: b70457a836ab74486a0f5c824f1e2d2e, type: 3}
 --- !u!1 &8141484836731834298 stripped
 GameObject:
@@ -122,3 +125,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.665647, y: 16.770367, z: 4.2400966}
   m_Center: {x: 0, y: 7.097052, z: 1.0526848}
+--- !u!114 &-4374341233132009481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141484836731834298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8e9c6f81da845a2a00387ea21747c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarAI
+  leftLaneX: 165
+  centerLaneX: 146
+  rightLaneX: 125
+  moveSpeed: 5
+  decisionTime: 2
+  followPlayer: 1
+  detectionRange: 200
+  forwardSpeed: 60
+  moveForward: 1
