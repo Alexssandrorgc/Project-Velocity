@@ -488,6 +488,18 @@ MonoBehaviour:
   occlusionOnlyReflectionNormalization:
     m_OverrideState: 1
     m_Value: 1
+<<<<<<< HEAD
+=======
+  intensityMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  skyOcclusionIntensityMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  worldOffset:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> b53616ab6f0d9a8fe8e01289c4c698126c4044b6
 --- !u!114 &-626072410347531262
 MonoBehaviour:
   m_ObjectHideFlags: 3
